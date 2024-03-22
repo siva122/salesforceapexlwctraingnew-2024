@@ -1,0 +1,29 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Child Demo" icon-name="standard:account">
+       <div class="slds-m-around_medium">
+        <!-- <p>Child Data</p>
+        <p>{sampleData}</p>
+        <p>{discountData}</p>
+        <p>{isGetData}</p> -->
+        <p>{sampleObj.sampleData}</p>
+        <p>{sampleObj.discountData}</p>
+        <p>{sampleObj.isGetData}</p>
+        <p>{sampleObj.location}</p>
+        <p>{message}</p>
+        <p>Lwc Spread Data</p>
+        <p>{sampleData}</p>
+        <p>{discountData}</p>
+        <p>{isGetData}</p>
+        <p>Parent Calling Child Method</p>
+        <p>{parentMessage}</p>
+        <p>courses:</p>
+        <template for:each={courses} for:item="course">
+  <li key={course}>{course}</li>
+        </template>
+
+<div class="">sample</div>
+
+<lightning-button variant="neutral" label="Change Parent Data" title="titleName" onclick={handleClick}></lightning-button>
+       </div>
+    </lightning-card>
+</template>

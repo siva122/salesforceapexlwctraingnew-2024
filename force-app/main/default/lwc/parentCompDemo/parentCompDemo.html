@@ -1,0 +1,19 @@
+<template>
+   <lightning-card  variant="Narrow"  title="Parent Component" icon-name="standard:account">
+   <div class="slds-m-around_medium">
+    <p>Parent Data</p>
+    <lightning-input type="text" lwc:ref="name" variant="standard" name="name" label="Enter Some Data" placeholder="type here..."></lightning-input>
+    <lightning-button variant="brand" label="Submit" title="titleName" onclick={handleClick}></lightning-button>
+    <h1>this is parent heading</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, tenetur?</p>
+<c-child-comp-demo 
+lwc:ref="child"
+sample-obj={obj}
+lwc:spread={obj}
+>
+</c-child-comp-demo>
+
+
+   </div>
+   </lightning-card>
+</template>

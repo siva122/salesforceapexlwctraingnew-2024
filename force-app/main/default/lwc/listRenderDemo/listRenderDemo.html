@@ -1,0 +1,23 @@
+<template>
+    <lightning-card  variant="Narrow"  title="List Render Demo" icon-name="standard:account">
+       <div class="slds-m-around_medium">
+  <ul>
+    <template for:each={contacts} for:item="item">
+        <li key={item.Id}>{item.Name}{item.Title}</li>
+    </template>
+  </ul>
+       </div>
+    </lightning-card>
+
+    <lightning-card  variant="Narrow"  title="List Box Display" icon-name="standard:account">
+       <div class="slds-m-around_medium">
+        <template for:each={contacts} for:item="item">
+            <div class="slds-box display-horizantal" key={item.Id}>
+                <p>{item.Name}{item.Title}</p>
+                <lightning-button-icon icon-name="utility:delete"    alternative-text="Delete"   class="slds-m-left_xx-small" title="Delete"></lightning-button-icon>
+                </div>
+        </template>
+      
+       </div>
+    </lightning-card>
+</template>

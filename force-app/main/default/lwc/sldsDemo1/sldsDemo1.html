@@ -1,0 +1,28 @@
+<template>
+  <lightning-card title="Slds Demo">
+    <div class="slds-var-p-around_medium">
+      <h1
+      
+        class="slds-text-align_center slds-text-heading_large slds-text-title_caps slds-border_top heading-border slds-var-p-around_medium slds-border_right slds-border_bottom slds-border_left slds-border_top"
+      >
+        slds Demo
+      </h1>
+      <label for="name">Enter Name</label>
+      <lightning-input
+      class="slds-m-bottom_medium"
+      variant="label-hidden"
+        type="text"
+        name="name"
+        label="Enter Name"
+        placeholder="type here..."
+      ></lightning-input>
+      <lightning-button
+        variant="brand"
+        label="Submit"
+        title="titleName"
+        onclick={handleClick}
+      ></lightning-button>
+      
+    </div>
+  </lightning-card>
+</template>

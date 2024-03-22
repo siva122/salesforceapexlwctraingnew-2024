@@ -1,0 +1,5 @@
+.display-horizantal{
+    display: flex;
+
+    justify-content: space-between;
+}

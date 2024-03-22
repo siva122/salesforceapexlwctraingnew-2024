@@ -1,0 +1,18 @@
+<template>
+   <lightning-card  variant="Narrow"  title="Slot Demo" icon-name="standard:account">
+     <div class="slds-p-around_medium">
+     
+  <c-child-slot-demo>
+    <!-- <p slot={slot1Name}>this is dynamic slot parent data</p>
+    <h2 slot="name2">this is heading from parent to child</h2>
+   <div>
+    <a href="https://www.google.com"></a>
+   </div>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-219/kirk.png" alt="sample1"> -->
+    <span slot="firstName">Willy</span>
+    <span slot="lastName">Wonka</span>
+    <span>Chocolatier</span>
+  </c-child-slot-demo>
+     </div>
+   </lightning-card>
+</template>

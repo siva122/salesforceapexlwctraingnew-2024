@@ -1,0 +1,31 @@
+<template>
+   <lightning-card  variant="Narrow"  title="Conditional Render" icon-name="standard:account">
+    <div class="slds-m-around_medium">
+
+            <lightning-input 
+            lwc:if={isShow}
+            type="text" 
+            variant="standard" 
+            name="Name" 
+            label="Name" 
+            placeholder="type here...">
+        </lightning-input>
+   
+       
+ <lightning-input 
+ type="checkbox" 
+ variant="standard" 
+ name="ShowData" 
+ label="Show Data" 
+ onchange={checkBoxChangeHandler}
+ placeholder="type here...">
+</lightning-input>
+<div lwc:if={isShow}>
+    <p>Data is displayed</p>
+</div>
+<div lwc:else>
+    <p>Initial Data</p>
+</div>
+    </div>
+   </lightning-card>
+</template>
